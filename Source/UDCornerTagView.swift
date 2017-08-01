@@ -128,8 +128,8 @@ class UDCornerTagView: UIView {
                 self.backgroundColor?.setFill()
                 UIColor.clear.setStroke()
                 
-                path.move(to: CGPoint.init(x: 0, y: 0))
-                path.addLine(to: CGPoint.init(x: width - 1.0, y: 0))
+                path.move(to: CGPoint.init(x: 1, y: 0))
+                path.addLine(to: CGPoint.init(x: width, y: 0))
                 path.addLine(to: CGPoint.init(x: width, y: width - 1.0))
                 path.addLine(to: CGPoint.init(x: 0, y: 0))
                 path.fill()
