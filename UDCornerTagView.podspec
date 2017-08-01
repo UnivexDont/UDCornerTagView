@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'UDCornerTagView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A fully UIview subclass of the native UIView which allows you to create beautiful Tag just some code.'
   s.homepage         = 'https://cocoapods.org/pods/LGButton'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
