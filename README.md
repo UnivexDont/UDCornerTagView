@@ -5,7 +5,7 @@ This is a Angle of view that based on UIView.You set conerView‘s textColor、t
  ![image](https://github.com/UnivexDont/UDCornerTagView/blob/master/Simulator%20Screen%20Shot%201%20Aug%202017%2C%2010.00.47%20AM.png)
 
 # Sample Code
-'''c
+### swift
 leftCornerView.text = "Left"
  rightCornerView.text = "Right"
         
@@ -17,5 +17,5 @@ leftCornerView.text = "Left"
         
   rightCornerView.backgroundColor = UIColor.orange
   rightCornerView.lableBackgroudColor = UIColor.brown
-'''
+###
  
