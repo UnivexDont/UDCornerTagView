@@ -34,6 +34,6 @@ platform:ios,’8.0’
 use_frameworks!
 
 target '<Your Target Name>' do
-	pod 'UDCornerTagView','~>1.0.0'
+	pod 'UDCornerTagView','~>1.0.1'
 end
 ```
