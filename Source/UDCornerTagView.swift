@@ -89,7 +89,7 @@ class UDCornerTagView: UIView {
     
     private func initContent(style:UDCornerTagStyle, lableHeight:CGFloat = 20.0){
         self.clipsToBounds = true
-    
+        
         let maxWidth = self.frame.width
         let lableWidth = sqrt(2)*maxWidth                           // label's width
         let lableCenterY = maxWidth/2.0 - sqrt(2)*lableHeight/4.0   // lable's center's Y
@@ -126,11 +126,14 @@ class UDCornerTagView: UIView {
                 let path = UIBezierPath()
                 
                 self.backgroundColor?.setFill()
+                UIColor.clear.setStroke()
+                
                 path.move(to: CGPoint.init(x: 0, y: 0))
-                path.addLine(to: CGPoint.init(x: width, y: 0))
-                path.addLine(to: CGPoint.init(x: width, y: width))
+                path.addLine(to: CGPoint.init(x: width - 1.0, y: 0))
+                path.addLine(to: CGPoint.init(x: width, y: width - 1.0))
                 path.addLine(to: CGPoint.init(x: 0, y: 0))
                 path.fill()
+                path.stroke()
                 
                 let shapeLayer = CAShapeLayer()
                 shapeLayer.path = path.cgPath
@@ -143,11 +146,14 @@ class UDCornerTagView: UIView {
             let path = UIBezierPath()
             
             self.backgroundColor?.setFill()
+            UIColor.clear.setStroke()
+            
             path.move(to: CGPoint.init(x: 0, y: 0))
-            path.addLine(to: CGPoint.init(x: 0, y: width))
-            path.addLine(to: CGPoint.init(x: width, y: 0))
+            path.addLine(to: CGPoint.init(x: 0, y: width-1.0))
+            path.addLine(to: CGPoint.init(x: width-1.0, y: 0))
             path.addLine(to: CGPoint.init(x: 0, y: 0))
             path.fill()
+            path.stroke()
             
             let shapeLayer = CAShapeLayer()
             shapeLayer.path = path.cgPath
