@@ -1,3 +1,4 @@
+[![CocoaPods](https://img.shields.io/cocoapods/v/AFNetworking.svg)]()
 # UDCornerTagView
 This is a Angle of view that based on UIView.You set conerView‘s textColor、text、backGroundColor、font size。There are two style is left and right.Default is left.
 
